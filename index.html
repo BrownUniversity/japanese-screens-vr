@@ -9,19 +9,18 @@
 </head>
 <body>
   <a-scene >
+
       <a-assets>
-        <a-asset-item id="hideyori-left" src="assets/Hideyori-Left.glb"></a-asset-item>  
-        <a-asset-item id="hideyori-right" src="assets/Hideyori-Right.glb"></a-asset-item>  
+        <a-asset-item id="soncho-full" src="assets/Soncho-Full.glb"></a-asset-item>  
       </a-assets>
 
-      <a-sky src="assets/sky.png"></a-sky>
+      <a-sky src="assets/room-molding-higher.png"></a-sky>
       <a-entity light="type: ambient; color: #FFF; intensity: 1"></a-entity>
-      <a-entity gltf-model="#hideyori-right" position="1.5 0 0" rotation="0 -90 0"></a-entity>
-      <a-entity gltf-model="#hideyori-left" position="-1.5 0 0" rotation="0 90 0"></a-entity>
       
-
-      <a-plane color="#ccbf9f" height="10" width="10" rotation="-90 0 0"></a-plane>
-
+      <a-sound src="src: url(assets/kat-koto-vr-recording.ogg)" autoplay="true" position="0 2 5"></a-sound>
+      <!-- SCREENS -->
+      <a-entity gltf-model="#soncho-full" shadow="receive: false" scale="1.33 1.33 1.33"></a-entity>
+      
   </a-scene>
 </body>
 </html>
